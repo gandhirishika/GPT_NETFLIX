@@ -70,8 +70,8 @@ const Login = () => {
     <div>
       <Header />
       <div>
-        <img
-          className="absolute"
+        <img 
+          className="absolute h-screen object-cover md:w-screen"
           src={BG_URL}
           alt="loading"
         />
@@ -79,7 +79,7 @@ const Login = () => {
 
       <form
         onSubmit={handleButtonClick}
-        className="absolute my-36 mx-auto right-0 left-0 p-12 bg-black w-3/12 text-white bg-opacity-80"
+        className="absolute my-36 mx-auto right-0 left-0 p-12 bg-black w-full md:w-3/12 text-white bg-opacity-80"
       >
         <h1 className=" text-3xl py-4 font-bold">
           {signInForm ?"Sign Up": "Sign In" }
